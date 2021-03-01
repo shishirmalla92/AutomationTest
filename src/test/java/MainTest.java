@@ -26,7 +26,7 @@ public class MainTest {
         password.sendKeys("ArchiPro@2020");
         WebElement submitButton = driver.findElement(By.xpath("/html/body/div[6]/div[1]/div/div/div[2]/div/div[1]/div/section/div/div/div/div[2]/form/div/div[3]/input"));
         submitButton.click();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         Assert.assertEquals(driver.getTitle(),"ArchiPro - Build your Dream Project");
         WebElement profileDropdown = driver.findElement(By.className("navbar-action-profile--arrow"));
         profileDropdown.click();
